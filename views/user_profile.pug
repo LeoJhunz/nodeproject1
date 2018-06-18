@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1 User Profile
+    #form-group
+        label Name:
+        input.form-control(type='text', name='name', readonly, value=user.name)
+    #form-group
+        label Email:
+        input.form-control(type='text', name='email', readonly, value=user.email)
+    #form-group
+        label Username:
+        input.form-control(type='text', name='username', readonly, value=user.username)
+    br
+    a.btn.btn-primary(href='javascript:void(0)', onclick='history.back();') Back
