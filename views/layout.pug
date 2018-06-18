@@ -18,11 +18,11 @@ html
                             a.nav-link(href='/articles/add') Add Articles
                 ul.navbar-nav.navbar-right
                     if user
-                        li
-                            span.nav-link.disabled Welcome, #{user.name}
-                        li
+                        li.nav-item.active
+                            a.nav-link(href='/users/profile') Welcome, #{user.name}
+                        li.nav-item
                             span.nav-link.disabled &nbsp;&nbsp;
-                        li
+                        li.nav-item
                             a.nav-link(href='/users/logout') Logout
                     else
                         li.nav-item

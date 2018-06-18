@@ -79,4 +79,9 @@ router.get('/logout', function(req, res){
     res.redirect('/users/login');
 });
 
+// User Profile
+router.get('/profile', function(req, res){
+    res.render('user_profile');
+});
+
 module.exports = router;
